@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMDRIVE RENTALS</title>
+  
+    <!-- icons_link -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+
+<!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- navbar -->
+     <header class="navbar">
+        <div class="container">
+
+            <a href="#home" class="logo">AIMDRIVE RENTALS</a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#cars">Cars</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="booknow.html" class="nav-book-btn">
+                    Book Now
+                </a>
+            </nav>
+
+        </div>
+    </header>
+    
+    <!-- Hero Section  -->
+    <section id="home" class="hero-section">
+
+        <div class="hero-content">
+            <h1>Drive Your Dream Car</h1>
+    
+            <p>Premium cars for every journey.</p>
+    
+            <a href="booknow.html" class="hero-book-btn">
+                Book Now
+            </a>
+        </div>
+    
+    </section>
+
+ <!-- company intro -->
+    <section id="about" class="intro-section">
+        <div class="intro-container">
+            <h2>Welcome to Aim Drive</h2>
+            <div class="underline"></div>
+            <p>Aim Drive is Lahore's premium car rental service, dedicated to making your journeys smooth, safe, and memorable. We offer a diverse fleet of well-maintained, brand-new luxury and economy vehicles tailored to your needs. Whether you require a car for corporate travel, family vacations, or special events, our seamless online booking system and 24/7 dedicated customer support ensure a hassle-free premium experience every time you drive with us.</p>
+        </div>
+    </section>
+
+
+      <!-- Search Section  -->
+    <section class="search-container">
+        <input type="text" id="searchInput"
+         placeholder="Search car by name (e.g., Civic)...">
+    </section>
+
+    <!--  Car Listing Section -->
+    <section id="cars" class="car-section">
+        <h2>Our Featured Fleet</h2>
+        <div class="car-grid" id="carGrid">
+            
+            <!-- Car 1 -->
+            <div class="car-card" data-name="honda civic">
+                <img src="images/honda_civic.jpg" alt="Honda Civic">
+                <h3>Honda Civic</h3>
+                <p>Fuel: Petrol | Seats: 5</p>
+                <div class="price">Rs. 8,000 / day</div>
+                <span class="status available">Available</span>
+
+                <a href="booknow.html?car=Honda%20Civic" class="car-book-btn">
+                    Rent Now
+                </a>
+            </div>
+               
+
+            <!-- Car 2 -->
+            <div class="car-card" data-name="toyota corolla">
+                <img src="images/toyota_corolla.jpg" alt="Toyota Corolla">
+                <h3>Toyota Corolla</h3>
+                <p>Fuel: Petrol | Seats: 5</p>
+                <div class="price">Rs. 7,000 / day</div>
+                <span class="status available">Available</span>
+                <a href="booknow.html?car=Toyota%20Corolla" class="car-book-btn">
+                    Rent Now
+                </a>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-card" data-name="suzuki swift">
+                <img src="images/swift.jpg" alt="Suzuki Swift">
+                <h3>Suzuki Swift</h3>
+                <p>Fuel: Petrol | Seats: 5</p>
+                <div class="price">Rs. 5,000 / day</div>
+                <span class="status rented">Rented Out</span>
+                <a href="#" class="car-book-btn rented-btn">
+                    Rent Now
+                </a>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car-card" data-name="toyota fortuner">
+                <img src="images/fortuner_car.jpg" alt="Toyota Fortuner">
+                <h3>Toyota Fortuner</h3>
+                <p>Fuel: Diesel | Seats: 7</p>
+                <div class="price">Rs. 25,000 / day</div>
+                <span class="status available">Available</span>
+                <a href="booknow.html?car=Toyota%20Fortuner" class="car-book-btn">
+                    Rent Now
+                </a>
+            </div>
+
+            <!-- Car 5 -->
+            <div class="car-card" data-name="kia sportage">
+                <img src="images/kia_sportage.jpg" alt="KIA">
+                <h3>KIA Sportage</h3>
+                <p>Fuel: Diesel | Seats: 4</p>
+                <div class="price">Rs. 12,000 / day</div>
+                
+                <span class="status rented">Rented Out</span>
+                <a href="#" class="car-book-btn rented-btn">
+                    Rent Now
+                </a>
+            </div>
+
+            <!-- Car 6 -->
+            <div class="car-card" data-name="audi a4">
+                <img src="images/audi.jpg" alt="Audi A4">
+                <h3>Audi A4</h3>
+                <p>Fuel: Petrol | Seats: 5</p>
+                <div class="price">Rs. 35,000 / day</div>
+                <span class="status available">Available</span>
+                <a href="booknow.html?car=Audi%20A4" class="car-book-btn">
+                    Rent Now
+                </a>
+            </div>
+
+           
+        </div>
+    </section>
+
+
+<!-- services -->
+    <section id="services" class="services-section">
+
+        <div class="services-container">
+    
+            <div class="services-heading">
+                <h2>Our Services</h2>
+                <p>
+                    Everything you need for a smooth and comfortable
+                    car rental experience.
+                </p>
+            </div>
+    
+            <div class="services-grid">
+    
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Wide Range of Cars</h3>
+                    <p>
+                        Choose from economy, luxury and family cars
+                        according to your needs.
+                    </p>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-icon">🕐</div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>
+                        Our support team is always available to
+                        assist you with your rental needs.
+                    </p>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>
+                        Enjoy competitive daily rental prices
+                        with a simple booking process.
+                    </p>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Clean & Well-Maintained</h3>
+                    <p>
+                        Our cars are regularly cleaned and
+                        maintained for a comfortable journey.
+                    </p>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+ 
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Company Intro -->
+            <div class="footer-col">
+                <h3>AIMDRIVE RENTALS</h3>
+                <p>Premium car rental service in Lahore, providing clean,
+                     safe, and well-maintained rides for your journeys.</p>
+            </div>
+
+            <!--  Quick Links  -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Our Cars</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="booknow.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!--  Contact & Social Info -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Lahore, Pakistan</p>
+                <p>📞 +92 300 1234567</p>
+                <p>✉️ support@aimdrive.com</p>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                
+                </div>==
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AIMDRIVE RENTALS. Designed & Developed by Aimen Khan </p>
+        </div>
+       
+    </footer>
+    
+
+     <!--  JavaScript -->
+        <script src="script.js"></script>
+
+</body>
+</html>

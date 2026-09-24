@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Car | AIMDRIVE RENTALS</title>
+
+<!-- icons_link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Booking CSS -->
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                AIMDRIVE RENTALS
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="index.html#cars">Cars</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="contact.html">Contact Us</a>
+            
+                <a href="booknow.html" class="nav-book-btn">
+                    Book Now
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Booking Section -->
+    <main>
+
+        <section class="booking-section">
+
+            <div class="booking-container">
+
+                <div class="booking-heading">
+                    <h1>Book Your Car</h1>
+
+                    <p>
+                        Fill in your details and reserve your
+                        preferred car with AIMDRIVE RENTALS.
+                    </p>
+                </div>
+
+
+                <form id="bookingForm">
+
+                    <!-- Customer Name -->
+                    <div class="form-group">
+
+                        <label for="userName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="userName"
+                            name="userName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="userPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="userPhone"
+                            name="userPhone"
+                            placeholder="03XX-XXXXXXX"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="userEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="userEmail"
+                            name="userEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Car Selection -->
+                    <div class="form-group">
+
+                        <label for="selectedCar">
+                            Select Car
+                        </label>
+                        <select id="selectedCar" name="selectedCar" required>
+
+                            <option value="">
+                                Choose a car
+                            </option>
+                        
+                            <option value="Honda Civic">
+                                Honda Civic - Rs. 8,000/day
+                            </option>
+                        
+                            <option value="Toyota Corolla">
+                                Toyota Corolla - Rs. 7,000/day
+                            </option>
+                        
+                            <option value="Suzuki Swift" disabled>
+                                Suzuki Swift - Rented Out
+                            </option>
+                        
+                            <option value="Toyota Fortuner">
+                                Toyota Fortuner - Rs. 25,000/day
+                            </option>
+                        
+                            <option value="KIA Sportage" disabled>
+                                KIA Sportage - Rented Out
+                            </option>
+                        
+                            <option value="Audi A4">
+                                Audi A4 - Rs. 35,000/day
+                            </option>
+                        
+                        </select>
+                        
+
+                    </div>
+
+
+                    <!-- Pickup Date -->
+                    <div class="form-group">
+
+                        <label for="pickupDate">
+                            Pickup Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="pickupDate"
+                            name="pickupDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Return Date -->
+                    <div class="form-group">
+
+                        <label for="returnDate">
+                            Return Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="returnDate"
+                            name="returnDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Pickup Location -->
+                    <div class="form-group">
+
+                        <label for="pickupLocation">
+                            Pickup Location
+                        </label>
+
+                        <select
+                            id="pickupLocation"
+                            name="pickupLocation"
+                            required
+                        >
+
+                            <option value="">
+                                Select pickup location
+                            </option>
+
+                            <option value="Lahore Cantt">
+                                Lahore Cantt
+                            </option>
+
+                            <option value="Gulberg">
+                                Gulberg
+                            </option>
+
+                            <option value="DHA Lahore">
+                                DHA Lahore
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group full-width">
+
+                        <label for="message">
+                            Special Request
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Any special request? (Optional)"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+                <!-- JS success/error message -->
+                <div id="bookingMessage"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+
+                <h3>AIMDRIVE RENTALS</h3>
+
+                <p>
+                    Premium car rental service in Lahore,
+                    providing clean, safe and well-maintained
+                    rides for your journeys.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#cars">
+                            Our Cars
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="booknow.html">
+                            Book Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Contact Us</h4>
+
+                <p>📍 Lahore, Pakistan</p>
+
+                <p>📞 +92 300 1234567</p>
+
+                <p>✉️ support@aimdrive.com</p>
+
+                  <!-- Social Media Icons -->
+
+                 <div class="social-icons">
+
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+ <div class="footer-bottom">
+             <p>&copy; 2026 AIMDRIVE RENTALS. Designed & Developed by Aimen Khan </p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
