@@ -59,4 +59,4 @@ Project Type: Personal Project
 
 🌐 Live Demo
 
- https://aimen-codes.github.io/aimdrive-car-rental/
+https://aimen-codes.github.io/aimdrive-car-rental/
